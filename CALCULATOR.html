@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator By Shantanu</title>
+</head>
+<style>
+    *{
+   padding: 10px;
+   margin: 5px;
+   margin-top: 5px;
+   margin-right: -10%;
+   margin-left: 0%;
+   height: auto;
+   width: auto;
+   border-width: 4px;
+   border-style: solid;
+   box-sizing: none;
+   cursor: pointer;
+   font-family: verdana ,fantasy;
+}
+body{
+   width: 90%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 5px rgb(148, 112, 112);
+   border-radius: 10px;
+   border-style: solid;
+   align-items: center;
+   background: linear-gradient(45deg, #030303, #cbc4c4 );
+   align-items: center;
+
+}
+h50 {
+    text-align: start;
+    width: -1000px;
+    align-content: end;
+    align-items: center;
+    justify-content: center;
+    display:initial;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    height: -200px;
+    margin-top: -50%;
+    text-size-adjust: 10;
+    border: 4px;
+    font-size: small;
+    font-display: flex;
+    position: initial;
+    margin-top: -40%;
+    
+    
+}
+</style>
+<body>
+    <form name="calculator">
+        <input type="text" name="answer" id="answer" readonly>
+        <table>
+            <tr>
+                <td><input type="button" name="one" value="1" onclick="calculator.answer.value += '1'"></td>
+                <td><input type="button" name="two" value="2" onclick="calculator.answer.value += '2'"></td>
+                <td><input type="button" name="three" value="3" onclick="calculator.answer.value += '3'"></td>
+                <td><input type="button" name="plus" value="+" onclick="calculator.answer.value += '+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="four" value="4" onclick="calculator.answer.value += '4'"></td>
+                <td><input type="button" name="five" value="5" onclick="calculator.answer.value += '5'"></td>
+                <td><input type="button" name="six" value="6" onclick="calculator.answer.value += '6'"></td>
+                <td><input type="button" name="minus" value="-" onclick="calculator.answer.value += '-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="seven" value="7" onclick="calculator.answer.value += '7'"></td>
+                <td><input type="button" name="eight" value="8" onclick="calculator.answer.value += '8'"></td>
+                <td><input type="button" name="nine" value="9" onclick="calculator.answer.value += '9'"></td>
+                <td><input type="button" name="times" value="x" onclick="calculator.answer.value += '*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="clear" value="C" onclick="calculator.answer.value = ''"></td>
+                <td><input type="button" name="zero" value="0" onclick="calculator.answer.value += '0'"></td>
+                <td><input type="button" name="equals" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)"></td>
+                <td><input type="button" name="div" value="÷" onclick="calculator.answer.value += '/'"></td>
+            </tr>
+        </table>
+    </form>
+    <h50>Shantanu Halgaonkar</h50>
+    
+</body>
+</html>
